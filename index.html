@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7bc5823485.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <section class="locationInput">
+      <h2 class="stylePackage">Location</h2>
+      <div class="userForm">
+        <input type="text" id="userInput" placeholder="Enter city, town" />
+        <button id="userLocationBtn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div>
+        <button id="location-btn">Use Current Location!</button>
+      </div>
+    </section>
+
+    <main class="weatherForecast">
+      <div class="forecastDisplay">
+        <h2 id="city">London</h2>
+        <h2 id="temp">6 <span>&#8451;</span></h2>
+        <img id="weatherIcon" src="" alt="" />
+        <h3 id="description">Partly Cloudy</h3>
+        <h3 id="range"><span id="high">H:8 </span><span id="low">L:2</span></h3>
+        <h3 id="feels-like">Feels Like: 4 <span>&#8451;</span></h3>
+      </div>
+    </main>
+
+    <aside class="newsFeed">
+      <h3>Trending News</h3>
+    </aside>
+
+    <footer></footer>
+
+    <div id="progressSpinner" class="lds-default">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
